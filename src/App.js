@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import './css/index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <>
+            <Navbar />
+            <h1 className='header'>
+                Hi, I'm Adam Lang, I am a web developer and an aspiring
+                fullstack developer.
+            </h1>
+        </>
+    );
+};
 
 export default App;
