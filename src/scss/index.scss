@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'navbar';
+@import 'hero';
 
 * {
     margin: 0;
@@ -9,13 +10,4 @@
 body {
     background-color: $primary;
     filter: brightness(5);
-}
-.header {
-    color: $accent;
-    font-family: Poppins;
-    margin-top: 12rem;
-    width: 810px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 52px;
 }
