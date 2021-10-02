@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../media/bg.jpeg';
 
 const Hero = () => {
     return (
@@ -7,6 +8,7 @@ const Hero = () => {
                 Hi, I'm Adam Lang, I am a web developer and an aspiring
                 fullstack developer.
             </h1>
+            <img className='bg' src={logo} alt='bg-img' />
         </div>
     );
 };
