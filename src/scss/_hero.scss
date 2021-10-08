@@ -3,12 +3,13 @@
 .container {
     position: relative;
     margin-top: 12rem;
+    max-width: 1024px;
+    margin-left: 256px;
     z-index: -1;
 }
 .header {
     color: $accent;
     font-family: Poppins;
-    margin-left: 15vw;
     font-size: 52px;
     width: clamp(300px, 600px, 810px);
 }
@@ -26,12 +27,7 @@
 @media screen and (max-width: 1024px) {
     /* Specific to this particular image */
     .container {
-        left: 50%;
+        left: 75%;
         margin-left: -512px; /* 50% */
-    }
-    .header {
-        position: relative;
-        left: 15%;
-        margin-left: 5vw;
     }
 }

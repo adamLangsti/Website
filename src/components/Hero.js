@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../media/bg.jpeg';
+import logo from '../media/geo.jpg';
 
 const Hero = () => {
     return (
