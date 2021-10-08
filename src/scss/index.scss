@@ -2,6 +2,7 @@
 @import 'navbar';
 @import 'hero';
 @import 'footer';
+@import 'variables';
 
 * {
     margin: 0;
@@ -14,5 +15,6 @@ html {
 }
 body {
     background-color: $primary;
-    // filter: brightness(5);
+    font-size: $fs-600;
+    font-family: Poppins;
 }

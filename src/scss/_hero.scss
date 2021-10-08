@@ -1,20 +1,20 @@
 @import 'colors';
+@import 'variables';
 
 .container {
     position: relative;
     margin-top: 12rem;
-    max-width: 1024px;
     margin-left: 256px;
     z-index: -1;
 }
 .header {
     color: $accent;
-    font-family: Poppins;
-    font-size: 52px;
-    width: clamp(300px, 600px, 810px);
+    font-size: $fs-xl / 1.5;
+    max-width: 1024px;
 }
 
 .bg {
+    filter: blur(3px);
     min-height: 100%;
     min-width: 1024px;
     width: 100%;
@@ -27,7 +27,11 @@
 @media screen and (max-width: 1024px) {
     /* Specific to this particular image */
     .container {
-        left: 75%;
-        margin-left: -512px; /* 50% */
+        left: -20%;
+        // margin-left: -512px; /* 50% */
+    }
+    .header {
+        max-width: 75vw;
+        min-width: 400px;
     }
 }
