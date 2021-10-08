@@ -1,8 +1,13 @@
-h1 {
-    color: white;
-}
+@import 'variables';
+@import 'colors';
+
 .footer {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    width: 100%;
+}
+.foot {
+    font-size: $fs-400 / 1.5;
+    color: $accent;
+    text-align: center;
 }

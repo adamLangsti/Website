@@ -1,12 +1,9 @@
 import React from 'react';
 
 const Footer = () => {
-    const getYear = () => {
-        return new Date().getFullYear();
-    };
     return (
         <div className='footer'>
-
+            <h1 className='foot'>This is a footer</h1>
         </div>
     );
 };

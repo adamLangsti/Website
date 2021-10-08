@@ -16,7 +16,7 @@
 
 .nav-links {
   color: #E6EED6;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 600;
   display: inline-block;
   position: relative;
@@ -77,14 +77,16 @@
   }
 }
 
-h1 {
-  color: white;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  width: 100%;
+}
+
+.foot {
+  font-size: 0.83333rem;
+  color: #E6EED6;
+  text-align: center;
 }
 
 * {
@@ -102,4 +104,8 @@ body {
   background-color: #090C02;
   font-size: 2rem;
   font-family: Poppins;
+}
+
+#root {
+  height: 100vh;
 }
