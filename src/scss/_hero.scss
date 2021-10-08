@@ -3,7 +3,7 @@
 
 .container {
     position: relative;
-    margin-top: 12rem;
+    padding-top: 18rem;
     margin-left: 256px;
     z-index: -1;
 }
@@ -24,6 +24,7 @@
     left: 0;
     z-index: -1;
 }
+
 @media screen and (max-width: 1024px) {
     /* Specific to this particular image */
     .container {

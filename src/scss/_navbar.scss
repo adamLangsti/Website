@@ -2,7 +2,8 @@
 @import 'variables';
 
 .nav {
-    position: relative;
+    position: fixed;
+    top: 0;
     width: clamp(200px, 100%, 100%);
     &-list {
         display: flex;

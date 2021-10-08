@@ -1,5 +1,6 @@
 .nav {
-  position: relative;
+  position: fixed;
+  top: 0;
   width: clamp(200px, 100%, 100%);
 }
 
@@ -43,7 +44,7 @@
 
 .container {
   position: relative;
-  margin-top: 12rem;
+  padding-top: 18rem;
   margin-left: 256px;
   z-index: -1;
 }
@@ -78,7 +79,7 @@
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
