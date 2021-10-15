@@ -46,13 +46,26 @@
   position: relative;
   padding-top: 18rem;
   margin-left: 256px;
-  z-index: -1;
 }
 
 .header {
   color: #E6EED6;
   font-size: 3.33333rem;
   max-width: 1024px;
+}
+
+.abt-btn {
+  height: 40px;
+  width: 100px;
+  border: none;
+  font-size: 1.13636rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.abt-btn:hover {
+  cursor: pointer;
 }
 
 .bg {

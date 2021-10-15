@@ -5,14 +5,24 @@
     position: relative;
     padding-top: 18rem;
     margin-left: 256px;
-    z-index: -1;
 }
 .header {
     color: $accent;
     font-size: $fs-xl / 1.5;
     max-width: 1024px;
 }
-
+.abt-btn {
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: $fs-400 / 1.1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    &:hover {
+        cursor: pointer;
+    }
+}
 .bg {
     filter: blur(3px);
     min-height: 100%;
