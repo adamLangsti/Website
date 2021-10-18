@@ -3,22 +3,25 @@
 
 .container {
     position: relative;
-    padding-top: 18rem;
+    padding-top: 7.5em;
     margin-left: 256px;
 }
 .header {
     color: $accent;
-    font-size: $fs-xl / 1.5;
+    font-size: $font-xxlarge / 1.5;
     max-width: 1024px;
+    font-family: Lato;
+
 }
 .abt-btn {
     height: 40px;
     width: 100px;
     border: none;
-    font-size: $fs-400 / 1.1;
+    font-size: $font-medium / 1.1;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 900;
+    font-family: 'Varela Round';
     &:hover {
         cursor: pointer;
     }
@@ -33,6 +36,19 @@
     top: 0;
     left: 0;
     z-index: -1;
+}
+.quarter {
+    width: 7.5em;
+    height: 7.5em;
+    border-top-right-radius: 0;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #ff000093;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 259px 141px rgba(255, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1024px) {

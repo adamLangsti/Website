@@ -1,57 +1,42 @@
-.nav {
-  position: fixed;
-  top: 0;
-  width: clamp(200px, 100%, 100%);
-}
-
-.nav-list {
+.navbar {
   display: flex;
-  justify-content: center;
-  padding-top: 2rem;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+  padding-right: 10vw;
+  margin-top: 1em;
+  z-index: 10;
 }
 
-.nav-items {
-  list-style-type: none;
-  padding: 1rem;
+.navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
-.nav-links {
-  color: #E6EED6;
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  position: relative;
+.navbar-links {
+  color: #e0fefe;
   text-decoration: none;
+  font-family: Lato, sans-serif;
+  padding: 1em;
 }
 
-.nav-links::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #E6EED6;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.nav-links:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.navbar-links:hover {
+  background-color: #34353a;
+  padding: 1em;
 }
 
 .container {
   position: relative;
-  padding-top: 18rem;
+  padding-top: 7.5em;
   margin-left: 256px;
 }
 
 .header {
-  color: #E6EED6;
+  color: #e0fefe;
   font-size: 3.33333rem;
   max-width: 1024px;
+  font-family: Lato;
 }
 
 .abt-btn {
@@ -62,6 +47,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 900;
+  font-family: 'Varela Round';
 }
 
 .abt-btn:hover {
@@ -78,6 +64,20 @@
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.quarter {
+  width: 7.5em;
+  height: 7.5em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #ff000093;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 259px 141px rgba(255, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -99,7 +99,7 @@
 
 .foot {
   font-size: 0.83333rem;
-  color: #E6EED6;
+  color: #e0fefe;
   text-align: center;
 }
 
@@ -115,9 +115,8 @@ html {
 }
 
 body {
-  background-color: #090C02;
-  font-size: 2rem;
-  font-family: Poppins;
+  background-color: #030708;
+  font-size: 1.5rem;
 }
 
 #root {
