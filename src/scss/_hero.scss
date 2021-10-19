@@ -9,7 +9,7 @@
     height: 100%;
     background: linear-gradient(0.9turn, $primary, $secondary);
     &-data {
-        margin-left: 200px;
+        margin-left: 10vw;
     }
 }
 .header {
@@ -37,19 +37,6 @@
     &:hover {
         cursor: pointer;
     }
-}
-.quarter {
-    width: 7.5em;
-    height: 7.5em;
-    border-top-right-radius: 0;
-    border-top-left-radius: 100%;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    // background: rgba(255, 0, 0, 0.1);
-    position: absolute;
-    right: -180px;
-    bottom: 0;
-    // box-shadow: 0 0 250px 600px rgb(0, 0, 180 / 15%);
 }
 
 @media screen and (max-width: 1024px) {

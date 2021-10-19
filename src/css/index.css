@@ -45,7 +45,7 @@
 }
 
 .container-data {
-  margin-left: 200px;
+  margin-left: 10vw;
 }
 
 .header, .content {
@@ -75,18 +75,6 @@
 
 .abt-btn:hover {
   cursor: pointer;
-}
-
-.quarter {
-  width: 7.5em;
-  height: 7.5em;
-  border-top-right-radius: 0;
-  border-top-left-radius: 100%;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  position: absolute;
-  right: -180px;
-  bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
