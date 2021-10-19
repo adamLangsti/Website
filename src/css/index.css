@@ -26,7 +26,7 @@
 .navbar-links {
   color: #e0fefe;
   text-decoration: none;
-  font-family: Lato, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 1em;
 }
 
@@ -52,7 +52,7 @@
   color: #e0fefe;
   font-size: 3.33333rem;
   max-width: 1024px;
-  font-family: Lato;
+  font-family: 'Montserrat', sans-serif;
   line-height: 57px;
 }
 
@@ -64,13 +64,13 @@
 
 .abt-btn {
   height: 40px;
-  width: 100px;
-  border: none;
+  width: 125px;
+  border: 1px solid blue;
   font-size: 1.13636rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 900;
-  font-family: Lato;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  margin-top: 25px;
 }
 
 .abt-btn:hover {

@@ -16,7 +16,7 @@
     color: $accent;
     font-size: $font-xxlarge / 1.5;
     max-width: 1024px;
-    font-family: Lato;
+    font-family: 'Montserrat', sans-serif;
     line-height: 57px;
 }
 .content {
@@ -27,13 +27,13 @@
 }
 .abt-btn {
     height: 40px;
-    width: 100px;
-    border: none;
-    font-size: $font-medium / 1.1;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 900;
-    font-family: Lato;
+    width: 125px;
+    border: 1px solid blue;
+    font-size: 1.13636rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    margin-top: 25px;
     &:hover {
         cursor: pointer;
     }
