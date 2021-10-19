@@ -22,23 +22,29 @@
 .content {
     @extend .header;
     font-size: $font-large * 1.5;
-    margin-top: 40px;
+    margin-top: 30px;
     max-width: 870px;
 }
-.abt-btn {
-    height: 40px;
-    width: 125px;
-    border: 1px solid blue;
-    font-size: 1.13636rem;
+.more-btn {
+    color: $primary;
+    position: relative;
+    border-radius: 3px;
+    border: none;
+    width: 150px;
+    margin-top: 30px;
+    padding: 13px 23px;
+    background: linear-gradient(to right, $primary 50%, $accent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.4s ease-in-out;
+    font-size: 16px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 10px;
-    margin-top: 25px;
     &:hover {
+        background-position: left bottom;
+        color: $accent;
         cursor: pointer;
     }
 }
-
 @media screen and (max-width: 1024px) {
     /* Specific to this particular image */
     .container {
@@ -53,3 +59,12 @@
         margin-left: 20vw;
     }
 }
+
+// height: 40px;
+// width: 125px;
+// border: 1px solid blue;
+// font-size: 1.13636rem;
+// font-weight: 400;
+// font-family: 'Montserrat', sans-serif;
+// border-radius: 10px;
+// margin-top: 25px;

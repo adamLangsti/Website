@@ -9,7 +9,9 @@ const Hero = () => {
                     I'm Adam Lang, I am a web developer and an aspiring
                     fullstack developer.
                 </h2>
-                <button className='abt-btn'>Learn more</button>
+                <button className='more-btn'>
+                    <h3 className="more-btn-text">Learn more</h3>
+                </button>
             </aside>
         </div>
     );
