@@ -94,7 +94,7 @@
 
 .more-btn:hover .more-btn-arrow {
   transform: translateX(3px);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .more-btn-text {
