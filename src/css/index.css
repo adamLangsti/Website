@@ -58,30 +58,47 @@
 
 .content {
   font-size: 2.25rem;
+  margin-bottom: 30px;
   margin-top: 30px;
   max-width: 870px;
 }
 
 .more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #030708;
   position: relative;
   border-radius: 3px;
-  border: none;
-  width: 150px;
-  margin-top: 30px;
+  border: 1px solid #e0fefe;
+  width: 175px;
   padding: 13px 23px;
-  background: linear-gradient(to right, #030708 50%, #e0fefe 50%);
-  background-size: 200% 100%;
+  background: linear-gradient(to right, #34353a 50%, #e0fefe 50%);
+  background-size: 210% 100%;
   background-position: right bottom;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   font-size: 16px;
   font-weight: 400;
+}
+
+.more-btn:active {
+  transform: scale(0.97);
 }
 
 .more-btn:hover {
   background-position: left bottom;
   color: #e0fefe;
   cursor: pointer;
+  border: 1px solid #e0fefe;
+}
+
+.more-btn:hover .more-btn-arrow {
+  transform: translateX(3px);
+  transition: transform 0.3s;
+}
+
+.more-btn-text {
+  padding-right: 7px;
 }
 
 @media screen and (max-width: 1024px) {

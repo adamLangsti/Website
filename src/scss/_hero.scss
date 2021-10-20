@@ -22,27 +22,41 @@
 .content {
     @extend .header;
     font-size: $font-large * 1.5;
+    margin-bottom: 30px;
     margin-top: 30px;
     max-width: 870px;
 }
 .more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $primary;
     position: relative;
     border-radius: 3px;
-    border: none;
-    width: 150px;
-    margin-top: 30px;
+    border: 1px solid $accent;
+    width: 175px;
     padding: 13px 23px;
-    background: linear-gradient(to right, $primary 50%, $accent 50%);
-    background-size: 200% 100%;
+    background: linear-gradient(to right, $secondary 50%, $accent 50%);
+    background-size: 210% 100%;
     background-position: right bottom;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-size: 16px;
     font-weight: 400;
+    &:active {
+        transform: scale(0.97);
+    }
     &:hover {
         background-position: left bottom;
         color: $accent;
         cursor: pointer;
+        border: 1px solid $accent;
+        .more-btn-arrow {
+            transform: translateX(3px);
+            transition: transform 0.3s;
+        }
+    }
+    &-text {
+        padding-right: 7px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -59,12 +73,3 @@
         margin-left: 20vw;
     }
 }
-
-// height: 40px;
-// width: 125px;
-// border: 1px solid blue;
-// font-size: 1.13636rem;
-// font-weight: 400;
-// font-family: 'Montserrat', sans-serif;
-// border-radius: 10px;
-// margin-top: 25px;

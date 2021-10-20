@@ -10,7 +10,8 @@ const Hero = () => {
                     fullstack developer.
                 </h2>
                 <button className='more-btn'>
-                    <h3 className="more-btn-text">Learn more</h3>
+                    <h3 className='more-btn-text'>Learn more</h3>
+                    <span className='more-btn-arrow'>➜</span>
                 </button>
             </aside>
         </div>
