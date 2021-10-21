@@ -2,13 +2,12 @@
 @import 'colors';
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 50%;
     z-index: 10;
-}
-.foot {
-    font-size: $font-medium / 1.5;
-    color: $accent;
-    text-align: center;
+    background-color: white;
 }

@@ -26,7 +26,6 @@
 .navbar-links {
   color: #e0fefe;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
   padding: 1em;
 }
 
@@ -48,37 +47,22 @@
   margin-left: 10vw;
 }
 
-.header, .content {
+.header {
   color: #e0fefe;
   font-size: 3.33333rem;
   max-width: 1024px;
-  font-family: 'Montserrat', sans-serif;
   line-height: 57px;
-}
-
-.content {
-  font-size: 2.25rem;
   margin-bottom: 30px;
-  margin-top: 30px;
-  max-width: 870px;
 }
 
-.more-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #030708;
-  position: relative;
-  border-radius: 3px;
-  border: 1px solid #e0fefe;
-  width: 175px;
-  padding: 13px 23px;
-  background: linear-gradient(to right, #34353a 50%, #e0fefe 50%);
-  background-size: 210% 100%;
-  background-position: right bottom;
-  transition: all 0.3s ease-in-out;
-  font-size: 16px;
-  font-weight: 400;
+.main, .meta {
+  color: #e0fefe;
+  font-size: 27px;
+  font-weight: 100;
+  max-width: 870px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  line-height: 33px;
 }
 
 .more-btn:active {
@@ -92,11 +76,6 @@
   border: 1px solid #e0fefe;
 }
 
-.more-btn:hover .more-btn-arrow {
-  transform: translateY(1px);
-  transition: transform 0.01s ease-in;
-}
-
 .more-btn-text {
   padding-right: 7px;
 }
@@ -106,7 +85,7 @@
   .container {
     min-width: 75%;
   }
-  .header, .content {
+  .header {
     max-width: 75vw;
     min-width: 400px;
   }
@@ -116,24 +95,26 @@
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 50%;
   z-index: 10;
-}
-
-.foot {
-  font-size: 0.83333rem;
-  color: #e0fefe;
-  text-align: center;
+  background-color: white;
 }
 
 .about {
   position: relative;
+  background: linear-gradient(0.9turn, #030708, #34353a);
+}
+
+.about-container {
+  max-width: 1440px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background: linear-gradient(0.45turn, #030708, #34353a);
 }
 
 * {
@@ -145,6 +126,7 @@
 body,
 html {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {

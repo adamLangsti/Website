@@ -1,36 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const Hero = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const toggleVisibility = () => {
-        window.scrollY > 300 ? setIsVisible(true) : setIsVisible(false);
-    };
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 100,
-            behavior: 'smooth',
-        });
-    };
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
-        return () => {
-            window.removeEventListener('scroll', toggleVisibility);
-        };
-    }, []);
-
     return (
         <div className='container'>
             <aside className='container-data'>
                 <h1 className='header'>Hello.</h1>
-                <h2 className='content'>
-                    I'm Adam Lang, I am a web developer and an aspiring
-                    fullstack developer.
+                <h2 className='main'>
+                    I'm a front-end developer and aspire to become a fullstack
+                    developer one day.
                 </h2>
-                <button className='more-btn' onClick={scrollToTop}>
-                    <h3 className='more-btn-text'>Learn more</h3>
-                    <span className='more-btn-arrow'>⇩</span>
-                </button>
+                <h3 className='meta'>
+                    I have been working in web development for around two years,
+                    and I enjoy building projects to improve my skills but also
+                    to learn something new.
+                </h3>
+
+                <div className='btn-container'>
+                    <button className='more-btn'>
+                        <h4 className='more-btn-text'>Projects</h4>
+                    </button>
+                    <button className='more-btn'>
+                        <h4 className='more-btn-text'>Contact</h4>
+                    </button>
+                </div>
             </aside>
         </div>
     );

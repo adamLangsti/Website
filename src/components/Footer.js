@@ -1,10 +1,14 @@
 import React from 'react';
+import { AiFillGithub, AiFillMail } from 'react-icons/ai';
 
 const Footer = () => {
     return (
-        <div className='footer'>
-            <h1 className='foot'>This is a footer</h1>
-        </div>
+        <section className='footer'>
+            <div className='footer-wrapper'>
+                <AiFillGithub />
+                <AiFillMail />
+            </div>
+        </section>
     );
 };
 

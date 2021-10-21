@@ -1,7 +1,10 @@
 .about {
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: linear-gradient(0.45turn, $primary, $secondary);
+    background: linear-gradient(0.90turn, $primary, $secondary);
+    &-container {
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
