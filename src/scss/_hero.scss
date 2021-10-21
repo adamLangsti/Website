@@ -17,7 +17,7 @@
     font-size: $font-xxlarge / 1.5;
     max-width: 1024px;
     line-height: 57px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .main {
     color: $accent;
@@ -26,27 +26,29 @@
     max-width: 870px;
     line-height: 33px;
     margin-bottom: 20px;
-    line-height: 33px;
+    line-height: 50px;
 }
 .meta {
     @extend .main;
 }
-.more-btn {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // color: $primary;
-    // position: relative;
-    // border-radius: 3px;
-    // border: 1px solid $accent;
-    // width: 175px;
-    // padding: 13px 23px;
-    // background: linear-gradient(to right, $secondary 50%, $accent 50%);
-    // background-size: 210% 100%;
-    // background-position: right bottom;
-    // transition: all 0.3s ease-in-out;
-    // font-size: 16px;
-    // font-weight: 400;
+.btn-container {
+    display: flex;
+}
+.btn-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid $accent;
+    width: 175px;
+    padding: 13px 23px;
+    background: linear-gradient(to right, $secondary 50%, $accent 50%);
+    background-size: 210% 100%;
+    background-position: right bottom;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
     &:active {
         transform: scale(0.99);
     }
@@ -56,8 +58,11 @@
         cursor: pointer;
         border: 1px solid $accent;
     }
+    &:nth-child(2) {
+        margin-left: 20px;
+    }
     &-text {
-        padding-right: 7px;
+        font-weight: 100;
     }
 }
 @media screen and (max-width: 1024px) {

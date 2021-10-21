@@ -10,17 +10,17 @@ const Hero = () => {
                     developer one day.
                 </h2>
                 <h3 className='meta'>
-                    I have been working in web development for around two years,
-                    and I enjoy building projects to improve my skills but also
-                    to learn something new.
+                    I have been working with web development for around two
+                    years, and I enjoy building projects to improve my skills
+                    and to learn new technologies.
                 </h3>
 
                 <div className='btn-container'>
-                    <button className='more-btn'>
-                        <h4 className='more-btn-text'>Projects</h4>
+                    <button className='btn-data'>
+                        <h4 className='btn-data-text'>Projects</h4>
                     </button>
-                    <button className='more-btn'>
-                        <h4 className='more-btn-text'>Contact</h4>
+                    <button className='btn-data'>
+                        <h4 className='btn-data-text'>Contact</h4>
                     </button>
                 </div>
             </aside>

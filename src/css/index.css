@@ -52,7 +52,7 @@
   font-size: 3.33333rem;
   max-width: 1024px;
   line-height: 57px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .main, .meta {
@@ -62,22 +62,47 @@
   max-width: 870px;
   line-height: 33px;
   margin-bottom: 20px;
-  line-height: 33px;
+  line-height: 50px;
 }
 
-.more-btn:active {
+.btn-container {
+  display: flex;
+}
+
+.btn-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #030708;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0fefe;
+  width: 175px;
+  padding: 13px 23px;
+  background: linear-gradient(to right, #34353a 50%, #e0fefe 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.btn-data:active {
   transform: scale(0.99);
 }
 
-.more-btn:hover {
+.btn-data:hover {
   background-position: left bottom;
   color: #e0fefe;
   cursor: pointer;
   border: 1px solid #e0fefe;
 }
 
-.more-btn-text {
-  padding-right: 7px;
+.btn-data:nth-child(2) {
+  margin-left: 20px;
+}
+
+.btn-data-text {
+  font-weight: 100;
 }
 
 @media screen and (max-width: 1024px) {
