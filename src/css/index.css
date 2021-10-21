@@ -82,7 +82,7 @@
 }
 
 .more-btn:active {
-  transform: scale(0.97);
+  transform: scale(0.99);
 }
 
 .more-btn:hover {
@@ -93,8 +93,8 @@
 }
 
 .more-btn:hover .more-btn-arrow {
-  transform: translateX(3px);
-  transition: transform 0.3s ease-in-out;
+  transform: translateY(1px);
+  transition: transform 0.01s ease-in;
 }
 
 .more-btn-text {
@@ -119,12 +119,21 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .foot {
   font-size: 0.83333rem;
   color: #e0fefe;
   text-align: center;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(0.45turn, #030708, #34353a);
 }
 
 * {
