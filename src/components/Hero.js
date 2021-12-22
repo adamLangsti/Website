@@ -3,9 +3,9 @@ import React from 'react';
 const Hero = () => {
     return (
         <div className='container'>
-            <aside className='container-data'>
+            <article className='container-data'>
                 <h1 className='header'>Hello.</h1>
-                <h2 className='main'>
+                <h2 className='main-content'>
                     I'm a front-end developer and aspire to become a fullstack
                     developer one day.
                 </h2>
@@ -23,7 +23,7 @@ const Hero = () => {
                         <h4 className='btn-data-text'>Contact</h4>
                     </button>
                 </div>
-            </aside>
+            </article>
         </div>
     );
 };

@@ -8,6 +8,13 @@
     flex-direction: column;
     height: 100%;
     background: linear-gradient(0.9turn, $primary, $secondary);
+    // background-image: repeating-linear-gradient(
+    //     -45deg,
+    //     $primary 0px,
+    //     $primary 20px,
+    //     $secondary 20px,
+    //     $secondary 40px
+    // );
     &-data {
         margin-left: 10vw;
     }
@@ -19,7 +26,7 @@
     line-height: 57px;
     margin-bottom: 20px;
 }
-.main {
+.main-content {
     color: $accent;
     font-size: 27px;
     font-weight: 100;
@@ -29,7 +36,7 @@
     line-height: 50px;
 }
 .meta {
-    @extend .main;
+    @extend .main-content;
 }
 .btn-container {
     display: flex;
