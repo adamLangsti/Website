@@ -1,88 +1,27 @@
-@import 'colors';
 @import 'variables';
+@import 'divider';
 
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    background: linear-gradient(0.9turn, $primary, $secondary);
-    // background-image: repeating-linear-gradient(
-    //     -45deg,
-    //     $primary 0px,
-    //     $primary 20px,
-    //     $secondary 20px,
-    //     $secondary 40px
-    // );
-    &-data {
-        margin-left: 10vw;
-    }
-}
-.header {
-    color: $accent;
-    font-size: $font-xxlarge / 1.5;
-    max-width: 1024px;
-    line-height: 57px;
-    margin-bottom: 20px;
-}
-.main-content {
-    color: $accent;
-    font-size: 27px;
-    font-weight: 100;
-    max-width: 870px;
-    line-height: 33px;
-    margin-bottom: 20px;
-    line-height: 50px;
-}
-.meta {
-    @extend .main-content;
-}
-.btn-container {
-    display: flex;
-}
-.btn-data {
+.hero {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $primary;
-    position: relative;
-    border-radius: 3px;
-    border: 1px solid $accent;
-    width: 175px;
-    padding: 13px 23px;
-    background: linear-gradient(to right, $secondary 50%, $accent 50%);
-    background-size: 210% 100%;
-    background-position: right bottom;
-    transition: all 0.3s ease-in-out;
-    font-size: 16px;
-    &:active {
-        transform: scale(0.99);
-    }
-    &:hover {
-        background-position: left bottom;
-        color: $accent;
-        cursor: pointer;
-        border: 1px solid $accent;
-    }
-    &:nth-child(2) {
-        margin-left: 20px;
-    }
-    &-text {
-        font-weight: 100;
-    }
 }
-@media screen and (max-width: 1024px) {
-    /* Specific to this particular image */
-    .container {
-        min-width: 75%;
-        // margin-left: -512px; /* 50% */
-    }
-    .header {
-        max-width: 75vw;
-        min-width: 400px;
-    }
-    .side-column {
-        margin-left: 20vw;
+.header {
+    color: $accent-color;
+    font-family: $main-font;
+    position: absolute;
+}
+
+.backdrop {
+    position: relative;
+
+    &-tint {
+        backdrop-filter: blur(12px);
+        height: 90vh;
+        width: 90vw;
+        position: absolute;
+        border-radius: 20px;
+        background-color: #ffffff10;
     }
 }

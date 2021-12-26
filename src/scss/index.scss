@@ -1,23 +1,9 @@
-@import 'colors';
-@import 'navbar';
-@import 'hero';
-@import 'footer';
 @import 'variables';
-@import 'about';
+@import 'hero';
+@import 'divider';
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body,
-html {
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-}
-body {
-    font-size: $font-large;
-}
-#root {
-    height: 100vh;
 }
