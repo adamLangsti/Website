@@ -1,0 +1,25 @@
+.header-container {
+    background-color: #fd7014;
+}
+
+.header-container > ul {
+    display: flex;
+    height: calc(50px * 1.5);
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: calc(5%);
+}
+.header-container > ul > li {
+    list-style-type: none;
+    font-family: 'Nunito';
+    margin: 0 30px;
+}
+.header-container > ul > li:hover {
+    background-color: green;
+    padding: 20px 0;
+}
+.header-container > ul > li > a {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    text-decoration: none;
+}

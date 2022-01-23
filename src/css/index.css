@@ -1,87 +1,13 @@
-.divider {
-  position: relative;
-  margin: 32px 0;
-  height: 400px;
-  width: 100vw;
-  border: 0;
-  overflow: hidden;
-}
-
-.divider.red::after {
-  background-color: #e62b56;
-}
-
-.divider.grey::after {
-  background-color: #919396;
-}
-
-.divider::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0) rotate(-10deg);
-  height: 2px;
-  width: 200%;
-  background-color: #425eab;
-  content: '';
-}
-
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header {
-  color: #fd6c22;
-  font-family: "Nunito";
-  position: absolute;
-}
-
-.backdrop {
-  position: relative;
-}
-
-.backdrop-tint {
-  backdrop-filter: blur(12px);
-  height: 90vh;
-  width: 90vw;
-  position: absolute;
-  border-radius: 20px;
-  background-color: #ffffff10;
-}
-
-.divider {
-  position: relative;
-  margin: 32px 0;
-  height: 400px;
-  width: 100vw;
-  border: 0;
-  overflow: hidden;
-}
-
-.divider.red::after {
-  background-color: #e62b56;
-}
-
-.divider.grey::after {
-  background-color: #919396;
-}
-
-.divider::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0) rotate(-10deg);
-  height: 2px;
-  width: 200%;
-  background-color: #425eab;
-  content: '';
-}
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #222831;
+    --secondary-color: #393e46;
+    --alternative-color: #fd7014;
+    --accent-color: #eeeeee;
+    --color-white: #fff;
 }
