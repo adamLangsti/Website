@@ -1,7 +1,26 @@
 .hero {
     height: 100vh;
+    background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
+}
+.hero-article {
+    margin-left: 20vw;
+    max-width: 620px;
+}
+
+.hero-header,
+.hero-content {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.hero-header {
+    font-size: 5em;
+}
+.hero-content {
+    margin-top: 1.5rem;
+    line-height: 1.5em;
+    color: #979797;
 }
