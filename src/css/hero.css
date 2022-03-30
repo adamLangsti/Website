@@ -3,24 +3,26 @@
     background-color: black;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.hero-article {
-    margin-left: 20vw;
-    max-width: 620px;
+.content-wrapper {
+    /* margin-left: 20vw;
+    max-width: 620px; */
 }
 
-.hero-header,
-.hero-content {
+.content-big,
+.content-small {
     color: white;
-    font-family: 'Merriweather Sans', sans-serif;
     letter-spacing: 1px;
+    font-family: var(--global-font);
+    text-align: left;
 }
 
-.hero-header {
+.content-big {
     font-size: 5em;
 }
-.hero-content {
-    margin-top: 1.5rem;
+.content-small {
+    margin-top: 1rem;
     line-height: 1.5em;
     color: #979797;
 }

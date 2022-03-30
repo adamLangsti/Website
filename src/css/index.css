@@ -5,9 +5,12 @@
 }
 
 :root {
+    /*Colors*/
     --primary-color: #222831;
     --secondary-color: #393e46;
     --alternative-color: #fd7014;
     --accent-color: #eeeeee;
     --color-white: #fff;
+    /*Font*/
+    --global-font: 'Merriweather Sans', sans-serif;
 }
