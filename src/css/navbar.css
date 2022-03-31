@@ -1,55 +1,37 @@
-/* .navbar-wrapper {
-    position: absolute;
-    height: 6rem;
-    width: 100%;
-}
-
-.navbar-list {
-    display: flex;
-    align-items: center;
-    color: white;
-    height: 3rem;
-    position: fixed;
-    right: 0;
-    margin-top: 1.5rem;
-}
-
-.navbar-list > li {
-    margin: 0 3rem;
-    list-style-type: none;
-}
-
-.navbar-list > li > a {
-    text-decoration: none;
-    font-family: var(--global-font);
-    color: white;
-    font-size: 16px;
-    font-weight: 100;
-} */
-
-.navbar-list {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 2rem;
-    list-style: none;
-    background-color: #000;
     padding: 2rem 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    background: transparent;
+    /*Out animation*/
+    transition: background-color 0.3s ease-in-out;
 }
-.navbar-list > li > a {
-    font-size: 22px;
+.navbar.active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color);
+    /*In animation*/
+    transition: background-color 0.3s ease-in-out;
+}
+.navbar.navbar.active > li > a {
+    color: white;
+}
+.navbar > li {
+    list-style: none;
+}
+
+.navbar > li > a {
     text-decoration: none;
     padding: 2rem 2rem;
-    color: #fff;
-    font-family: var(--global-font);
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
-.navbar-list > li > a:hover {
+.navbar > li > a:hover {
     background-color: var(--primary-color);
-}
-
-@media screen and (max-width: 600px) {
-    
+    color: var(--accent-color);
+    border-radius: 3px;
 }

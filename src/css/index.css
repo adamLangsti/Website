@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 :root {
@@ -11,6 +12,5 @@
     --alternative-color: #fd7014;
     --accent-color: #eeeeee;
     --color-white: #fff;
-    /*Font*/
-    --global-font: 'Merriweather Sans', sans-serif;
+    --text-color: #292929;
 }
