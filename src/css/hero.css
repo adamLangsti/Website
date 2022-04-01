@@ -6,8 +6,8 @@
     justify-content: center;
 }
 .content-wrapper {
-    /* margin-left: 20vw;
-    max-width: 620px; */
+    animation: fadeInLeft linear 1s;
+    position: relative;
 }
 
 .content-big,
@@ -24,4 +24,15 @@
 .content-small {
     margin-top: 1rem;
     line-height: 1.5em;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        left: -100%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
 }

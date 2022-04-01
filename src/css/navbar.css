@@ -25,11 +25,10 @@
 
 .navbar > li > .navlink {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--primary-color);
-    padding: 20px 0px;
     margin: 0px 20px;
     display: inline-block;
     position: relative;
@@ -46,7 +45,7 @@
 
 .navlink-animation::before {
     width: 0%;
-    bottom: 10px;
+    bottom: -8px;
 }
 .navlink-animation:hover::before {
     width: 100%;
