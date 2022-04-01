@@ -4,9 +4,9 @@ import '../css/hero.css';
 const Hero = () => {
     return (
         <section className='hero'>
-            <article className='content-wrapper'>
-                <h1 className='content-big'>Hello, I'm Adam.</h1>
-                <h2 className='content-small'>
+            <article className='hero-container'>
+                <h1>Hello, I'm Adam.</h1>
+                <h2>
                     I am a Javascript and ReactJS developer with a passion
                     <br /> for a great user experience.
                 </h2>
