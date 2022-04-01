@@ -6,13 +6,13 @@
     justify-content: center;
 }
 .hero-container {
-    animation: fadeInLeft linear 1s;
+    animation: fadeInTop linear 1s;
     position: relative;
 }
 
 .hero-container > * {
     color: var(--text-color);
-    letter-spacing: 1px;
+
     font-family: var(--global-font);
     text-align: left;
 }
@@ -25,7 +25,7 @@ h2 {
     line-height: 1.5em;
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeInTop {
     0% {
         opacity: 0;
         top: -50%;
