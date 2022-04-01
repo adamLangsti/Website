@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleNavbarBackground = () => {
-        if (window.scrollY >= 250) {
+        if (window.scrollY >= 100) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
@@ -23,16 +23,24 @@ const Navbar = () => {
         <nav>
             <ul className={isVisible ? 'navbar active' : 'navbar'}>
                 <li>
-                    <a href='/'>Home</a>
+                    <a className='navlink navlink-animation' href='/'>
+                        Home
+                    </a>
                 </li>
                 <li>
-                    <a href='/'>About me</a>
+                    <a className='navlink navlink-animation' href='/'>
+                        About me
+                    </a>
                 </li>
                 <li>
-                    <a href='/'>Projects</a>
+                    <a className='navlink navlink-animation' href='/'>
+                        Projects
+                    </a>
                 </li>
                 <li>
-                    <a href='/'>Contact</a>
+                    <a className='navlink navlink-animation' href='/'>
+                        Contact
+                    </a>
                 </li>
             </ul>
         </nav>

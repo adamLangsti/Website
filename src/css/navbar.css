@@ -6,32 +6,52 @@
     position: fixed;
     width: 100%;
     background: transparent;
-    /*Out animation*/
     transition: background-color 0.3s ease-in-out;
 }
 .navbar.active {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: var(--primary-color);
-    /*In animation*/
     transition: background-color 0.3s ease-in-out;
+    opacity: 0.8;
 }
-.navbar.navbar.active > li > a {
+.navbar.active > li > .navlink {
     color: white;
+    opacity: 1;
 }
+
 .navbar > li {
     list-style: none;
 }
 
-.navbar > li > a {
+.navbar > li > .navlink {
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
     text-decoration: none;
-    padding: 2rem 2rem;
-    color: var(--text-color);
-    font-size: 1.5em;
-    font-weight: 400;
+    color: var(--primary-color);
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
 }
 
-.navbar > li > a:hover {
+.navbar > li > .navlink::before {
+    transition: 300ms;
+    height: 5px;
+    content: '';
+    position: absolute;
     background-color: var(--primary-color);
-    color: var(--accent-color);
-    border-radius: 3px;
+}
+
+.navlink-animation::before {
+    width: 0%;
+    bottom: 10px;
+}
+.navlink-animation:hover::before {
+    width: 100%;
+}
+
+.navbar.active > li > .navlink-animation::before {
+    background-color: white;
 }
