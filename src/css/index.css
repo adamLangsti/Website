@@ -5,12 +5,17 @@
     font-family: Helvetica, sans-serif;
 }
 
-:root {
-    /*Colors*/
+/* :root {
     --primary-color: #222831;
     --secondary-color: #393e46;
     --alternative-color: #fd7014;
     --accent-color: #eeeeee;
     --color-white: #fff;
     --text-color: #292929;
+} */
+:root {
+    --primary-color: #3a3e59;
+    --secondary-color: #ed6b5b;
+    --accent-color: #c36b84;
+    --text-color: #fff;
 }
