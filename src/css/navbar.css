@@ -28,7 +28,7 @@
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin: 0px 20px;
     display: inline-block;
     position: relative;
